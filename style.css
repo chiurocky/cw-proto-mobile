@@ -121,6 +121,24 @@ button {
     width:372px;
 }
 
+.trade-button {
+    transition: all 200ms ease;
+}
+
+.fab:hover {
+    cursor: pointer;
+    .trade-button {
+        fill-opacity: 1;
+    }
+}
+
+.fab-2:hover {
+    cursor: pointer;
+    .trade-button {
+        fill-opacity: 1;
+    }
+}
+
 .fab-2 {
     position: absolute;
     z-index: 30;
@@ -190,7 +208,7 @@ button {
 
 /* custom cursor */
 
-.tapCursor {
+/* .tapCursor {
     position: absolute;
     box-sizing: content-box;
     width: 12px;
@@ -203,4 +221,11 @@ button {
     pointer-events: none;
 
     mix-blend-mode: multiply;
+} */
+
+/* Trade Ticekt Modal */
+
+.trade-ticket {
+    cursor: pointer;
+    z-index: 500;
 }

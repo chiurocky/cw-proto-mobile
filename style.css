@@ -121,8 +121,12 @@ button {
     width:372px;
 }
 
-.trade-button {
-    transition: all 200ms ease;
+.fab-2 {
+    position: absolute;
+    z-index: 30;
+    top: 43rem;
+    right: 0px;
+    width:372px;
 }
 
 .fab:hover {
@@ -139,12 +143,8 @@ button {
     }
 }
 
-.fab-2 {
-    position: absolute;
-    z-index: 30;
-    top: 43rem;
-    right: 0px;
-    width:372px;
+.trade-button {
+    transition: all 200ms ease;
 }
 
 .lockup {
@@ -190,16 +190,6 @@ button {
     }
 }
 
-@keyframes transitionBottom {
-    0% {
-        transform: translateY(200px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
 @keyframes tickerTape {
     0% {
         transform: translateX(0px)
@@ -207,6 +197,16 @@ button {
 
     100% {
         transform: translateX(-3500px)
+    }
+}
+
+@keyframes transitionBottom {
+    0% {
+        transform: translateY(200px);
+    }
+
+    100% {
+        transform: translateY(0px);
     }
 }
 
@@ -231,5 +231,62 @@ button {
 
 .trade-ticket {
     cursor: pointer;
-    z-index: 500;
+    z-index: 50;
+}
+
+.md-1 {
+    position: absolute;
+    top: 5rem;
+    z-index: 50;
+    animation: ticketTrans 200ms ease;
+    display:none;
+}
+
+.md-2 {
+    position: absolute;
+    top: 5rem;
+    z-index: 50;
+    animation: ticketTrans 200ms ease;
+    display:none;
+}
+
+.md-3 {
+    position: absolute;
+    top: 5rem;
+    z-index: 50;
+    animation: ticketTrans 200ms ease;
+    display:none;
+}
+
+.context-menu {
+    position: absolute;
+    top: 16rem;
+    left: 3.5rem;
+    z-index: 50;
+    animation: contextTrans 250ms ease;
+    display:none;
+}
+
+@keyframes ticketTrans {
+    0% {
+        transform: translateY(300px);
+        opacity: .9;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes contextTrans {
+    0% {
+        transform: translateY(20px);
+        opacity: .9;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }

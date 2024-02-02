@@ -267,6 +267,17 @@ button {
     display:none;
 }
 
+.trade-3a,
+.trade-3b {
+    top: 14rem;
+    left: 1rem;
+}
+
+.phoneLock {
+    display: none;
+}
+
+
 @keyframes ticketTrans {
     0% {
         transform: translateY(300px);

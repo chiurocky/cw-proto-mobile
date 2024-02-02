@@ -141,7 +141,7 @@
 
     <section class="phone-container phone-1">
         <div class="modal md-1">
-            <img src="imgs/trade-ticket.png" alt="trade ticket">
+            <img src="imgs/trade-ticket-search.png" alt="trade ticket">
         </div>
 
         <div class="top-layer">
@@ -228,8 +228,12 @@
 
         </div>
 
-        <div class="body-content">
+        <div class="body-content phoneScroll">
             <img src="imgs/feed-scroll.png" alt="feed scroll">
+        </div>
+
+        <div class="body-content phoneLock">
+            <img src="imgs/feed-scroll-private.png" alt="feed scroll">
         </div>
 
     </section>
@@ -239,7 +243,7 @@
             <img src="imgs/trade-ticket.png" alt="trade ticket">
         </div>
 
-        <div class="context-menu">
+        <div class="context-menu menu-2">
             <img src="imgs/context-menu.png" alt="trade ticket">
         </div>
 
@@ -376,6 +380,16 @@
             <img src="imgs/trade-ticket.png" alt="trade ticket">
         </div>
 
+        <div class="context-menu menu-3">
+            <img src="imgs/context-menu.png" alt="trade ticket">
+        </div>
+        <div class="context-menu trade-3a">
+            <img src="imgs/context-trade-1.png" alt="trade ticket">
+        </div>
+        <div class="context-menu trade-3b">
+            <img src="imgs/context-trade-2.png" alt="trade ticket">
+        </div>
+
         <div class="top-layer">
             <svg width="374" height="47" viewBox="0 0 390 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -497,7 +511,7 @@
 
         </div>
 
-        <div class="body-content cw-mountain">
+        <div class="body-content cw-candle">
             <img src="imgs/candle.png" alt="candle">
         </div>
 
@@ -514,22 +528,34 @@
             document.body.style.zoom = "80%";
         }
 
+        const phoneScroll = document.querySelector('.phoneScroll');
+        const phoneLock = document.querySelector('.phoneLock');
+
         const tradeBtn1 = document.querySelector('.tb-1');
         const tradeBtn2 = document.querySelector('.tb-2');
         const tradeBtn3 = document.querySelector('.tb-3');
         const modal1 = document.querySelector('.md-1');
         const modal2 = document.querySelector('.md-2');
         const modal3 = document.querySelector('.md-3');
-        const context2 = document.querySelector('.context-menu');
+        const context2 = document.querySelector('.menu-2');
+        const context3 = document.querySelector('.menu-3');
         const mountain = document.querySelector('.cw-mountain');
         const candle = document.querySelector('.cw-candle');
 
-        // tradeBtn1.addEventListener('click', () => {
-        //     modal1.style.display = 'block';
-        // })
-        // modal1.addEventListener('click', () => {
-        //     modal1.style.display = 'none';
-        // })
+        const trade3a = document.querySelector('.trade-3a');
+        const trade3b = document.querySelector('.trade-3b');
+
+
+
+
+        tradeBtn1.addEventListener('click', () => {
+            modal1.style.display = 'block';
+            phoneScroll.style.display = 'none';
+        })
+        modal1.addEventListener('click', () => {
+            modal1.style.display = 'none';
+            phoneScroll.style.display = 'block';
+        })
 
         tradeBtn2.addEventListener('click', () => {
             modal2.style.display = 'block';
@@ -554,6 +580,35 @@
             context2.style.display = 'none';
             modal2.style.display = 'block';
         })
+
+
+
+        candle.addEventListener('click', () => {
+            context3.style.display = 'block';
+        })
+        context3.addEventListener('click', () => {
+            context3.style.display = 'none';
+            trade3a.style.display = 'block';
+        })
+        trade3a.addEventListener('click', () => {
+            trade3a.style.display = 'none';
+            trade3b.style.display = 'block';
+        })
+        trade3b.addEventListener('click', () => {
+            trade3b.style.display = 'none';
+        })
+
+
+        phoneScroll.addEventListener('click', () => {
+            phoneScroll.style.display = 'none';
+            phoneLock.style.display = 'block';
+        })
+        phoneLock.addEventListener('click', () => {
+            phoneLock.style.display = 'none';
+            phoneScroll.style.display = 'block';
+        })
+
+
 
 
         VanillaTilt.init(document.querySelector(".phone-container"), {

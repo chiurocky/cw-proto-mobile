@@ -277,7 +277,6 @@ button {
     display: none;
 }
 
-
 @keyframes ticketTrans {
     0% {
         transform: translateY(300px);

@@ -107,7 +107,7 @@ button {
     overflow:hidden;
 
     & img {
-        width: 3505px;
+        width: 13319px;
         height: 25px;
         animation: tickerTape 700s linear infinite;
     }

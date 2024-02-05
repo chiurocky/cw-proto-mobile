@@ -277,6 +277,34 @@ button {
     display: none;
 }
 
+
+
+.cards-open {
+    cursor: pointer;
+    margin-bottom: -220px;
+    transition: all 250ms ease;
+}
+
+.cardsToggle {
+    margin-bottom: 0px;
+}
+
+
+
+.cards-swipe {
+    cursor: pointer;
+    width: 664px;
+    height: 320px;
+    margin-bottom: 1.25rem;
+    transform: translatex(0px);
+    transition: all 250ms ease;
+}
+
+.cardSwipeToggle {
+    transform: translatex(-310px);
+}
+
+
 @keyframes ticketTrans {
     0% {
         transform: translateY(300px);
@@ -298,5 +326,15 @@ button {
     100% {
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+
+@keyframes cardsTrans {
+    0% {
+        transform: translateY(-215px);
+    }
+
+    100% {
+        transform: translateY(0px);
     }
 }

@@ -228,12 +228,12 @@
 
         </div>
 
-        <div class="body-content phoneScroll">
-            <img src="imgs/feed-scroll.png" alt="feed scroll">
-        </div>
-
-        <div class="body-content phoneLock">
-            <img src="imgs/feed-scroll-private.png" alt="feed scroll">
+        <div class="body-content">
+            <img class="phoneScroll" src="imgs/feed-scroll.png" alt="feed scroll"><img class="phoneLock" src="imgs/feed-scroll-private.png" alt="feed scroll">
+            <img class="cards-open" src="imgs/cards-open.png" alt="feed open">
+            <img class="cards-close" src="imgs/cards-close.png" alt="feed close">
+            <img class="cards-swipe" src="imgs/cards-swipe.png" alt="feed swipe">
+            <img class="modules-end" src="imgs/modules-end.png" alt="feed end">
         </div>
 
     </section>
@@ -610,6 +610,16 @@
             phoneScroll.style.display = 'block';
         })
 
+
+        const cardsOpen = document.querySelector('.cards-open');
+        cardsOpen.addEventListener('click', () => {
+            cardsOpen.classList.toggle('cardsToggle');
+        })
+
+        const cardSwipe = document.querySelector('.cards-swipe');
+        cardSwipe.addEventListener('click', () => {
+            cardSwipe.classList.toggle('cardSwipeToggle');
+        })
 
 
 

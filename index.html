@@ -228,7 +228,7 @@
 
         </div>
 
-        <div class="body-content">
+        <div class="body-content bc-1">
             <img class="phoneScroll" src="imgs/feed-scroll.png" alt="feed scroll"><img class="phoneLock" src="imgs/feed-scroll-private.png" alt="feed scroll">
             <img class="cards-open" src="imgs/cards-open.png" alt="feed open">
             <img class="cards-close" src="imgs/cards-close.png" alt="feed close">
@@ -545,14 +545,17 @@
         const trade3a = document.querySelector('.trade-3a');
         const trade3b = document.querySelector('.trade-3b');
 
+        const bc1 = document.querySelector('.bc-1');
 
 
 
         tradeBtn1.addEventListener('click', () => {
             modal1.style.display = 'block';
+            bc1.style.display = 'none';
         })
         modal1.addEventListener('click', () => {
             modal1.style.display = 'none';
+            bc1.style.display = 'block';
         })
 
         tradeBtn2.addEventListener('click', () => {

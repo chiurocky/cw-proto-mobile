@@ -107,7 +107,7 @@ button {
     overflow:hidden;
 
     & img {
-        width: 3505px;
+        width: 13319px;
         height: 25px;
         animation: tickerTape 700s linear infinite;
     }
@@ -154,6 +154,13 @@ button {
     left: 1rem;
     width: 165px;
 }
+
+.body-content {
+    width: 372px;
+    overflow:hidden;
+}
+
+
 
 
 
@@ -232,7 +239,9 @@ button {
 .trade-ticket {
     cursor: pointer;
     z-index: 50;
+
 }
+
 
 .md-1 {
     position: absolute;
@@ -267,6 +276,10 @@ button {
     display:none;
 }
 
+.menu-2, .menu-3 {
+    width: 70%;
+}
+
 .trade-3a,
 .trade-3b {
     top: 14rem;
@@ -276,6 +289,34 @@ button {
 .phoneLock {
     display: none;
 }
+
+
+
+.cards-open {
+    cursor: pointer;
+    margin-bottom: -220px;
+    transition: all 250ms ease;
+}
+
+.cardsToggle {
+    margin-bottom: 0px;
+}
+
+
+
+.cards-swipe {
+    cursor: pointer;
+    width: 664px;
+    height: 320px;
+    margin-bottom: 1.25rem;
+    transform: translatex(0px);
+    transition: all 250ms ease;
+}
+
+.cardSwipeToggle {
+    transform: translatex(-310px);
+}
+
 
 @keyframes ticketTrans {
     0% {
@@ -300,3 +341,14 @@ button {
         opacity: 1;
     }
 }
+
+@keyframes cardsTrans {
+    0% {
+        transform: translateY(-215px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
